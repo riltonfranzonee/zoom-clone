@@ -1,8 +1,8 @@
-import express from 'express';
-import { Server } from 'http';
-import socketIo from 'socket.io';
-import { ExpressPeerServer } from 'peer';
-import { v4 as uuidv4 } from 'uuid';
+const express = require('express');
+const { Server } = require('http');
+const socketIo = require('socket.io');
+const { ExpressPeerServer } = require('peer');
+const { v4: uuidv4 } = require('uuid');
 
 const app = express();
 const server = new Server(app);
